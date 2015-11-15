@@ -28,3 +28,7 @@ lines(years, yfit)
 newdata = expand.grid(years=c(predict_yr))
 predict_val = predict(lse, newdata)
 cat(paste(c("Predicted Value of Public Transport for year", predict_yr, "is", predict_val, "\n"), collapse=" "))
+
+
+cor_coef = cor(numberOfVehicles, busesCoaches)
+cat(paste(c("Correlation Coefficient is", cor_coef, "\n"), collapse=" "))

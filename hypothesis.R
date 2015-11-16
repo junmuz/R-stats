@@ -1,7 +1,7 @@
 
 
 cp = '6119'
-claim = 1800
+claim = 2000
 alpha = 0.975
 data = read.csv('Westminster.csv', header=TRUE)
 dataByCP = subset(data, CP==cp)
